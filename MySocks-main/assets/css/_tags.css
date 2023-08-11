@@ -1,0 +1,45 @@
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.brands__tag {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--tag-shadow);
+    padding: 3px 12px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-size: var(--font-min);
+    font-weight: 600;
+    color: var(--tag-text);
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    outline: none;
+    text-align: center;
+}
+
+.tag::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 7px;
+}
+
+@media (max-width: 576px) {
+    .catalog-popup .tag {
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,55 @@
+:root {
+
+    /* шрифт */
+    --font-medplus: 20px;
+    --font-med: 18px;
+    --default-fs: 16px;
+    --font-min: 14px;
+    --font-mm: 12px;
+    --default-lh: 32px;
+
+    /* Цвета */
+
+    --black: #000000;
+    --lightblack: #5B5B5B;
+    --gray: #999999;
+    --bg-btn: #bcbcbc;
+    --border: #dddddd;
+    --light: #f2f2f2;
+    --megalight: #f4f4f4;
+    --lightwhite: #f8f8f8;
+    --white: #ffffff;
+    --blue: #3F4FDC;
+
+    /* теги */
+
+    --tag-shadow: 0px 3px 5px -1px #DDDDDD;
+    --tag-text: #212121;
+    --tag-green: linear-gradient(102.97deg, #D5FFC1 0%, #99DD79 100%);
+    --tag-biruz: linear-gradient(102.97deg, #C1FFFB 0%, #83E0D5 100%);
+    --tag-blue: linear-gradient(102.97deg, #CDD5FF 0%, #93A1EB 100%);
+    --tag-purple: linear-gradient(102.97deg, #F5E5FF 0%, #CEA3E9 100%);
+    --tag-pink: linear-gradient(102.97deg, #FFE5F2 0%, #FCCEE5 100%);
+    --tag-red: linear-gradient(102.97deg, #FFDBDB 0%, #F2ADAD 100%);
+    --tag-gray: linear-gradient(102.97deg, #EAEAEA 0%, #C9C9C9 100%);
+    --tag-peach: linear-gradient(102.97deg, #FFDFB2 0%, #FFBA5C 100%); 
+    --tag-lightgreen: linear-gradient(102.97deg, #DDFFE9 0%, #8EFFB4 100%);
+    --tag-yellow: linear-gradient(102.97deg, rgba(255, 252, 180, 0.69) 0%, rgba(255, 248, 77, 0.69) 100%);
+
+    /* контейнер */
+
+    --container-min: 1200px;
+    --container-max: 1540px;
+    --container-mega: 1740px;
+    --container-padding: 50px;
+
+    /* отступы */
+
+    --gip: 10px;
+    --gap: 25px;
+    --gap2: 50px;
+
+    /* анимация */
+
+    --short: .3s; 
+}

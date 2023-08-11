@@ -1,0 +1,31 @@
+.breadcrumbs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.breadcrumbs__list li+li:before {
+    content: url(../../img/brd.svg);
+    margin: 0 10px;
+    height: 100%;
+}
+
+.breadcrumbs__item {
+    display: flex;
+}
+
+.breadcrumbs__link {
+    font-weight: 500;
+    font-size: var(--font-min);
+    text-transform: uppercase;
+    color: var(--lightblack);
+}
+
+.main-head {
+    margin-bottom: var(--gap);
+    font-size: 32px;
+}

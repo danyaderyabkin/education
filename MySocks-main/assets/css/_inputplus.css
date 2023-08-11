@@ -1,0 +1,111 @@
+
+.number {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+}
+
+.number input[type="number"] {
+    display: block;
+    border: none;
+    height: 32px;
+    line-height: 32px;
+    padding: 1px 20px;
+    width: 100%;
+    color: #5B5B5B;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f3f3f3;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.number input[type="number"]:focus-visible {
+    outline: 1px solid #ccc;
+}
+
+.number input[type="number"]::-webkit-outer-spin-button,
+.number input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.number-minus {
+    position: absolute;
+    height: 50%;
+    bottom: 1px;
+    right: -20px;
+    width: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #5B5B5B;
+}
+
+.number-plus {
+    position: absolute;
+    height: 50%;
+    top: 1px;
+    right: -20px;
+    bottom: 1px;
+    width: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #5B5B5B;
+}
+
+.number-minus:focus-visible {
+    outline: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.number-plus:focus-visible {
+    outline: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .number-plus, .number-minus {
+        font-size: 24px;
+        top: 7px;
+    }
+
+    .number-minus {
+        left: 0;
+    }
+    .number-plus{
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .number-plus, .number-minus {
+        font-size: 24px;
+    }
+}

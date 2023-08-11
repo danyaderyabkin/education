@@ -1,0 +1,8 @@
+.seo {
+    padding-top: var(--gap2);
+    padding-bottom: var(--gap2);
+}
+
+.seo__text {
+    text-align: center;
+}

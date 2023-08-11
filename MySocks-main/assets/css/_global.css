@@ -1,0 +1,136 @@
+@import url('_variables.css');
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--default-fs);
+    line-height: var(--default-lh);
+    color: var(--dark);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+}
+
+.header {
+    flex: 0 0 auto;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: var(--container-max);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+.reset-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 0px;  
+    height: 0px;  
+    margin: -1px;  
+    border: 0;  
+    padding: 0;
+    clip: rect(0, 0, 0, 0);  
+    overflow: hidden;
+}
+
+.section-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.four-title {
+    font-weight: 500;
+}
+
+.story__status {
+    color: #34CF5F;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.design {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    display: flex;
+    background-color: var(--blue);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--white);
+    transition: var(--short);
+}
+.design:hover {
+    background-color: var(--light);
+    color: var(--black);
+}
+
+.design__text {
+    writing-mode: vertical-rl;
+    padding-top: var(--gip);
+    padding-bottom: var(--gip);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding-right: var(--gip);
+        padding-left: var(--gip);
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        padding-right: var(--gip);
+        padding-left: var(--gip);
+    }
+}
+

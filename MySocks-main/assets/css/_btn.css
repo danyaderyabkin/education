@@ -1,0 +1,46 @@
+.btn {
+    display: inline-block;
+    padding: 20px 39px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: var(--bold);
+    background-color: var(--orange);
+    border: none;
+    transition: color, background-color var(--short);
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background-color: var(--border);
+}
+
+.btn:active {
+    background-color: var(--lightblack);
+    color: var(--white);
+}
+
+.btn-black {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0;
+}
+
+.reset-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.catalog-popup-plus.active--catalog {
+    background-color: var(--black);
+    color: #fff;
+}
+
+.active--catalog:hover {
+    background-color: var(--black);
+}

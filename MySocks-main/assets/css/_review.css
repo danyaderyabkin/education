@@ -1,0 +1,132 @@
+.review {
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+.review__container {
+    max-width: var(--container-min);
+}
+
+.review__heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.review__info {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.review__write {
+    color: var(--lightblack);
+    display: inline-block;
+    transition: color var(--short);
+}
+
+.review__write:hover {
+    color: var(--border);
+}
+
+.review__write:active {
+    color: var(--black);
+}
+
+
+.review__write:not(:last-child) {
+    margin-right: 15px;
+}
+
+.review__info svg {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.review__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.review__person {
+    display: flex;
+}
+
+.review__img {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--border);
+    background-color: var(--megalight);
+    background-image: url(../../img/person.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.review__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review__date {
+    text-transform: uppercase;
+    color: var(--lightblack);
+}
+
+.review__name {
+    font-size: var(--font-medplus);
+}
+
+.review__stars {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:1024px) {
+    .review__info {
+        font-size: var(--font-mm);
+    }
+}
+
+@media (max-width:768px) {
+
+    .review__heading {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: var(--gip);
+    }
+
+   .review__info {
+    position: unset;
+   }
+
+
+}
+
+@media (max-width:576px) {
+    .review__item {
+        flex-direction: column;
+    }
+
+    .review__person {
+        margin-bottom: 15px;
+    }
+
+    .review__stars {
+        justify-content: center;
+    }
+}
+
+@media (max-width:359px) {
+    
+}

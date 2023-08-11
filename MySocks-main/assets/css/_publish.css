@@ -1,0 +1,106 @@
+.publish {
+    background-image: url(../../img/p-bg.jpg);
+    min-height: 485px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: var(--gap2);
+    padding-bottom: var(--gap);
+}
+
+.publish__container {
+    max-width: var(--container-mega);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.publish__heading {
+    transition: color var(--short);
+}
+
+.publish__heading:hover {
+    color: var(--gray);
+}
+
+.publish__heading:active {
+    color: var(--black);
+}
+
+.publish__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-top: var(--gap2); */
+}
+
+.publish__item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: inherit;
+    width: 300px;
+    min-height: 300px;
+    margin-right: var(--gap);
+    margin-bottom: var(--gap);
+}
+
+.publish__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--white);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    height: 100%;
+    padding: 15px;
+    font-size: var(--font-med);
+}
+
+.publish__date {
+    padding-bottom: 10px;
+    font-size: var(--font-medplus);
+    font-weight: 600;
+}
+
+.publish__item,
+.publish__link,
+.publish__img {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+@media (max-width:768px) {
+    .publish__list {
+        justify-content: space-between;
+    }
+
+     .publish__item {
+        width: 49%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:576px) {
+    .publish__list {
+        justify-content: center;
+    }
+
+     .publish__item {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .publish .section-title {
+        margin-bottom: var(--gip);
+    }
+}
+
+@media (max-width:359px) {
+    .publish__item {
+        width: 100%;
+    }
+}
